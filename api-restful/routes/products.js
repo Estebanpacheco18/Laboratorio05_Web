@@ -15,6 +15,7 @@ router.get("/", (req, res) => {
   const limitNumber = parseInt(limit);
 
   // Calcular el índice inicial y final
+  // Se vera que productos se van a mostrar en la respuesta
   const startIndex = (pageNumber - 1) * limitNumber;
   const endIndex = startIndex + limitNumber;
 
